@@ -10,5 +10,6 @@ class Question(models.Model):
     # category = models.CharField(max_length=100,blank=True,Null=True)
     # category = models.CharField(max_length=100,default='others')---default option
     added_dt = models.DateTimeField(auto_now_add=True)
-    
 
+    def __str__(self):
+        return self.question
